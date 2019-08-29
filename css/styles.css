@@ -1,0 +1,40 @@
+
+table,th,td{
+    border: 1px solid black;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(WhatsApp\ Image\ 2019-08-27\ at\ 10.57.43.jpeg);
+}
+
+input[type=text],input[type=date]{
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+box-sizing: border-box;
+}
+
+button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+h3 {
+display: inline-block;
+}
+
+img{
+    width:10%;
+    height: 20%;
+}
