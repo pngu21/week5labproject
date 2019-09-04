@@ -13,7 +13,8 @@
                 <li><h3><a href="/deletetask">Delete Task</a></h3></li>
                 <li><h3><a href="/deleteCompletedTasks">Delete Completed Tasks</a></h3></li>
             </ul>
-    
+
+            <form action = "/deleteCompleted" method = "POST">
             <table>
                 <tr>
                     <td>TaskID</td>
@@ -45,6 +46,9 @@
                         </td>
                     </tr>
                 <%} %>
-            </table>
+            </table> </br>
+
+            
+            <button>Submit</button></form>
     </body>
 </html>

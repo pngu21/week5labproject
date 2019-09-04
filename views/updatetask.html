@@ -1,10 +1,10 @@
 <html>
     <head>
-            <link rel = "stylesheet" href = "styles.css">
-
+        <link rel = "stylesheet" href = "styles.css">
+        
     </head>
     <body>
-            <h1>Insert New Task</h1> </br>
+            <h1>Updates Tasks</h1> </br>
 
             <ul>
                 <li><h3><a href="/">Home</a></h3></li>
@@ -14,21 +14,24 @@
                 <li><h3><a href="/deletetask">Delete Task</a></h3></li>
                 <li><h3><a href="/deleteCompletedTasks">Delete Completed Tasks</a></h3></li>
             </ul>
+    
 
-        <form action = "/data" method = "POST">
-            Task Name:
+        <form action = "/updatedata" method = "POST">
+            Task ID:
+            <input class = "form-control" id = "taskId" name = "taskId"/>
+            <!--Task Name:
             <input type = "text" method = "POST" name = "name"/> </br>
             Assign To:
             <input type = "text" method = "POST" name = "assignTo"/> </br>
             Task Due:
-            <input type = "date" method = "POST" name = "dueDate"/> </br>
+            <input type = "date" method = "POST" name = "dueDate"/> </br> -->
             Task Status:
             <select type = "text" class = "form-control" id = "status" name = "status" multiple>
                 <option type = "text" value = "inprogress">Inprogress</option>
                 <option type = "text" value = "Complete">Complete</option>
             </select> </br>
-            Task Descrip:
-            <input type = "text" method = "POST" name = "description"/> </br>
+            <!--Task Descrip:
+            <input type = "text" method = "POST" name = "description"/> </br> -->
             <button>Submit</button>
         </form>
     </body>

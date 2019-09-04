@@ -1,11 +1,10 @@
 <html>
     <head>
         <link rel = "stylesheet" href = "styles.css">
-        <img src = "mylogo2.jpg";> </br>
+        
     </head>
     <body>
-        <h1>Welcome...To the ToDo App.</h1> </br>
-        
+        <h1>Delete Tasks</h1> </br>
         <ul>
             <li><h3><a href="/">Home</a></h3></li>
             <li><h3><a href="/newtask">Add New Task</a></h3></li>
@@ -14,6 +13,17 @@
             <li><h3><a href="/deletetask">Delete Task</a></h3></li>
             <li><h3><a href="/deleteCompletedTasks">Delete Completed Tasks</a></h3></li>
         </ul>
+
+        <form action = "/deletetaskID" method = "POST">
+            Task ID:
+            <input class = "form-control" id = "taskId" name = "taskId"/> </br>
+            <!--Task Due:
+            <input type = "date" name = "dueDate"/> </br>
+            Task Descrip:
+            <input type = "text" name = "description"/> --></br>
+            <button>Submit</button>
+        </form>
+
 
     </body>
 </html>
