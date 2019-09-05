@@ -12,13 +12,15 @@ ul,li{
     list-style: none;
 }
 
-input[type=text],input[type=date],input[class=form-control]{
+input[type=text],input[type=date],input[class=form-control], select{
 width: 60%;
 padding: 12px 20px;
 margin: 8px 0;
 display: block;
 box-sizing: border-box;
 }
+
+
 
 button{
     background-color: rgb(60, 146, 146);
