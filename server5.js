@@ -123,6 +123,7 @@ app.post("/data", function(req, res){
 
 app.post("/updatedata", function(req, res){
     let id = new ObjectId(req.body.taskId);
+    //let id = getNewId();
     let taskDetails = req.body;
     let filter = {_id: id};
     let update = {$set: {
@@ -138,6 +139,7 @@ app.post("/updatedata", function(req, res){
 
 app.post("/deletetaskID", function(req, res){
     let id = new ObjectId(req.body.taskId);
+    //let id = getNewId();
     //let taskDetails = req.body;
     let filter = {_id: id};
     db.collection("TaskDetailsdb").deleteOne(filter);
@@ -153,7 +155,7 @@ app.post("/deleteCompleted", function(req, res){
 
 /*function getNewId(){
     return(Math.floor(100000 + Math.random() * 900000));
-} */
+}*/
 
 
 
