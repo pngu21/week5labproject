@@ -9,25 +9,32 @@
             <ul>
                 <li><h3><a href="/">Home</a></h3></li>
                 <li><h3><a href="/newtask">Add New Task</a></h3></li>
+                <li><h3><a href="/newdeveloper">Add New Developer</a></h3></li>
                 <li><h3><a href="/listtasks">List of Tasks</a></h3></li>
+                <li><h3><a href="/listdevelopers">List of Developers</a></h3></li>
                 <li><h3><a href="/updatetask">Update Task</a></h3></li>
                 <li><h3><a href="/deletetask">Delete Task</a></h3></li>
                 <li><h3><a href="/deleteCompletedTasks">Delete Completed Tasks</a></h3></li>
             </ul>
 
         <form action = "/data" method = "POST">
-            Task Name:
+            <h3>Task Name:</h3>
             <input type = "text" method = "POST" name = "name"/> </br>
-            Assign To:
-            <input type = "text" method = "POST" name = "assignTo"/> </br>
-            Task Due:
+            <h3>Assign To:</h3>
+            <input list = "assignTo" method = "POST" name = "assignTo">
+            <datalist id = "assignTo">
+                <% for(let i = 0; i < developers.length; i++){ %>
+                <option><%= developers[i]._id %></option> <% } %>
+            </datalist>
+            </input> </br>
+            <h3>Task Due:</h3>
             <input type = "date" method = "POST" name = "dueDate"/> </br>
-            Task Status:
+            <h3>Task Status:</h3>
             <select name = "status">
                 <option  name = "inprogress">Inprogress</option>
                 <option  name = "Complete">Complete</option>
             </select> </br>
-            Task Descrip:
+            <h3>Task Descrip:</h3>
             <input type = "text" method = "POST" name = "description"/> </br>
             <button>Submit</button>
         </form>

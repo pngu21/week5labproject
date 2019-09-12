@@ -1,7 +1,6 @@
 {
   "name": "wee5lab",
   "version": "1.0.0",
-  "description": "",
   "main": "server5.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +9,20 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
-    "ejs": "^2.6.2",
-    "express": "^4.17.1"
-  }
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "mongodb": "^3.3.2",
+    "mongoose": "^5.7.0",
+    "mongoose-dateonly": "^1.0.6"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pngu21/week5labproject.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pngu21/week5labproject/issues"
+  },
+  "homepage": "https://github.com/pngu21/week5labproject#readme",
+  "description": ""
 }

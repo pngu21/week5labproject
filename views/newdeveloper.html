@@ -1,0 +1,37 @@
+<html>
+    <head>
+            <link rel = "stylesheet" href = "styles.css">
+
+    </head>
+    <body>
+            <h1>Insert New Task</h1> </br>
+
+            <ul>
+                <li><h3><a href="/">Home</a></h3></li>
+                <li><h3><a href="/newtask">Add New Task</a></h3></li>
+                <li><h3><a href="/newdeveloper">Add New Developer</a></h3></li>
+                <li><h3><a href="/listtasks">List of Tasks</a></h3></li>
+                <li><h3><a href="/listdevelopers">List of Developers</a></h3></li>
+                <li><h3><a href="/updatetask">Update Task</a></h3></li>
+                <li><h3><a href="/deletetask">Delete Task</a></h3></li>
+                <li><h3><a href="/deleteCompletedTasks">Delete Completed Tasks</a></h3></li>
+            </ul>
+
+        <form action = "/addDeveloper" method = "POST">
+            <h3>Developer Name & Surname:</h3>
+            <input type = "text" method = "POST" name = "firstName" placeholder = "First Name"/> </br>
+            <input type = "text" method = "POST" name = "lastName" placeholder = "Last Name"/> </br>
+            <h3>Level:</h3>
+            <select name = "level">
+                <option  name = "beginner">BEGINNER</option>
+                <option  name = "expert">EXPERT</option>
+            </select> </br>
+            <h3>Address:</h3>
+            <input type = "text" method = "POST" name = "state" placeholder = "State"/> </br>
+            <input type = "text" method = "POST" name = "suburb" placeholder = "Suburb"/> </br>
+            <input type = "text" method = "POST" name = "street" placeholder = Street/> </br>
+            <input type = "text" method = "POST" name = "unit" placeholder = "Unit"/> </br>
+            <button>Submit</button>
+        </form>
+    </body>
+</html>
